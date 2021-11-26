@@ -362,3 +362,4 @@ zsdoc/data
 
 __pycache__/
 app/common/consts.py
+alembic.ini
