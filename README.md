@@ -6,10 +6,11 @@ Cardoc 개인 기업 과제 #7
 
 ## 📚 Stack 📚 
 <br>
+<p>
 Back-End : <img src="https://img.shields.io/badge/Python 3.9-3776AB?style=for-the-badge&logo=Python&logoColor=white"/>&nbsp;
 <img alt="Python" src = "https://img.shields.io/badge/fastapi-109989?style=for-the-badge&logo=FASTAPI&logoColor=white"/>&nbsp;
 <img src="https://img.shields.io/badge/Mysql-0064a5?style=for-the-badge&logo=Mysql&logoColor=white"/>&nbsp;
-
+</p>
 
 <p>
 Tool : <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=Git&logoColor=white"/>&nbsp;
