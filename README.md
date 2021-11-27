@@ -259,4 +259,4 @@ Tool : <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&log
 <br><br>
 
 ## Reference
-이 프로젝트는 원티드x위코드 백엔드 프리온보딩 과제 일환으로 에서 출제한 과제를 기반으로 만들었습니다.
+이 프로젝트는 원티드x위코드 백엔드 프리온보딩 과제 일환으로 카닥에서 출제한 과제를 기반으로 만들었습니다.
