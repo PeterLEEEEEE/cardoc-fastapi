@@ -1,4 +1,3 @@
-from typing import Optional
 from dataclasses import asdict
 
 import uvicorn
@@ -10,17 +9,12 @@ from router import auth, tire
 
 
 def create_app():
-    """
-    앱 함수 실행
-    :return:
-    """
     c = conf()
     app = FastAPI()
     # 데이터 베이스 이니셜라이즈
     conf_dict = asdict(c)
     db.init_app(app, **conf_dict)
     
-
     # 레디스 이니셜라이즈
 
     # 미들웨어 정의
@@ -35,7 +29,6 @@ def create_app():
     # 라우터 정의
     app.include_router(auth.router)
     app.include_router(tire.router)
-
 
     return app
 

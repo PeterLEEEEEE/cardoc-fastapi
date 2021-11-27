@@ -14,7 +14,7 @@ from service.auth_service import (
 router = APIRouter(prefix='/auth')
 
 
-@router.post("/signup")
+@router.post("/signup", tags=['회원가입'])
 async def signup(reg_info: UserRegister, session: Session = Depends(db.session)):
     if not reg_info.user_id or not reg_info.password:
         return JSONResponse(status_code=400, content=dict(msg="ID AND PASSWORD REQUIRED"))
@@ -28,9 +28,9 @@ async def signup(reg_info: UserRegister, session: Session = Depends(db.session))
     return JSONResponse(status_code=201, content=dict(msg="SUCCESSFULLY REGISTERED"))
 
 
-@router.post("/login")
+@router.post("/login", tags=['로그인'])
 async def user_login(user_info: Login, session: Session = Depends(db.session)):
-    if not user_info.user_id or not user_info.password:
+    if (not user_info.user_id) or (not user_info.password):
         return JSONResponse(status_code=400, content=dict(msg="ID AND PASSWORD REQUIRED"))
     token = await check_user_info(user_info, session)
     if not token:    

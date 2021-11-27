@@ -3,6 +3,11 @@ from common.consts import BASE_DIR
 from dao.tire_dao import create_tire_info, user_tire_info_dao
 
 
+async def check_info_range(tire_info: dict):
+    if len(tire_info['item']) > 5:
+        return False
+    return True
+
 def tire_info_register(tire_info: dict, session):
     for info in tire_info['item']:
         url_parser([info.id, f"{BASE_DIR}/{info.trimId}"], session)
