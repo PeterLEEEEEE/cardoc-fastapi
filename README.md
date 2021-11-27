@@ -50,7 +50,7 @@ Tool : <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&log
 
 ### 1. 회원가입 API
 
-**Endpoint**: {BASE}/auth/signup
+**Endpoint**: {BASE}/auth/signup  (POST)
 
 - user_id: 유저 아이디, password: 비밀번호를 입력받아 회원가입 
 - role은 미입력하거나 아무거나 입력 시 기본적으로 client(고객)이며 admin(관리자)으로 설정 시 admin role 부여 
@@ -90,9 +90,9 @@ Tool : <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&log
 
 <br><br>
 
-### 2. 로그인 API
+### 2. 로그인 API  
 
-**Endpoint**: {BASE}/auth/login
+**Endpoint**: {BASE}/auth/login  (POST)
 
 <br>
 
@@ -134,7 +134,7 @@ Tool : <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&log
 
 <br>
 
-**Endpoint**: {BASE}/tire/register-info
+**Endpoint**: {BASE}/tire/register-info  (POST)
 
 **입력 예시**
 ```json
@@ -193,11 +193,12 @@ Tool : <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&log
 
 ### 4. 사용자가 소유한 타이어 정보 조회 API
 
+- query parameter로 사용자의 아이디를 입력하여 사용자 소유 타이어 정보를 조회함
 - 관리자는 본인 여부 상관없이 고객의 타이어 정보 조회 가능
 - 고객은 본인의 타이어 정보만 조회 가능
 - 조회 성공 시 데이터베이스에 저장되어 있는 타이어의 정보를 담아 반환
 
-**Endpoint**: {BASE}/tire/tire-info/user?name={사용자의 아이디}
+**Endpoint**: {BASE}/tire/tire-info/user?name={사용자의 아이디}   (GET)
 
 <br>
 
