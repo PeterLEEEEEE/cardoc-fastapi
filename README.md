@@ -44,6 +44,40 @@ Tool : <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&log
 
 <br><br>
 
+## 프로젝트 구조
+```
+├── app
+│   ├── common
+│   │   ├── config.py
+│   │   └── consts.py
+│   ├── dao
+│   │   └── tire_dao.py
+│   ├── database
+│   │   ├── conn.py
+│   │   ├── models.py
+│   │   └── schema.py
+│   ├── main.py
+│   ├── router
+│   │   ├── auth.py
+│   │   └── tire.py
+│   ├── service
+│   │   ├── auth_service.py
+│   │   └── tire_service.py
+│   └── utils
+│       └── token.py
+├── migrations
+│   ├── README
+│   ├── env.py
+│   ├── script.py.mako
+│   └── versions
+│       ├── c98f9a31dafa_migration1.py
+│       ├── cf40dcd66556_migration1.py
+│       ├── d48c840a46cf_migration1.py
+│       └── ed36d8b109c4_migration1.py
+├── README.md
+└── requirements.txt
+```
+
 ## 기능 구현 사항
 
 <br>
