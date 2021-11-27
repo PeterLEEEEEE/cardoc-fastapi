@@ -20,6 +20,11 @@ Tool : <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&log
 
 <br><br>
 
+## 배포 주소(Naver Cloud 배포)
+- 주소(BASE): http://101.101.209.173:8000
+- 스웨거 API: http://101.101.209.173:8000/docs
+
+
 ## 과제 안내
 
 1. 사용자 생성 API(회원가입, 로그인)
@@ -27,6 +32,7 @@ Tool : <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&log
 3. 사용자가 소유한 타이어 정보 조회 API
 
 <br><br>
+
 
 ## ERD
 
