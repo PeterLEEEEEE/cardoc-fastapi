@@ -11,13 +11,10 @@ from router import auth, tire
 def create_app():
     c = conf()
     app = FastAPI()
-    # 데이터 베이스 이니셜라이즈
+
     conf_dict = asdict(c)
     db.init_app(app, **conf_dict)
     
-    # 레디스 이니셜라이즈
-
-    # 미들웨어 정의
     app.add_middleware(
         CORSMiddleware,
         allow_origins=conf().ALLOW_SITE,
@@ -26,7 +23,6 @@ def create_app():
         allow_headers=["*"],
     )
     
-    # 라우터 정의
     app.include_router(auth.router)
     app.include_router(tire.router)
 
