@@ -20,10 +20,12 @@ Tool : <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&log
 
 <br><br>
 
+
 ## 배포 주소(Naver Cloud 배포)
 - 주소(BASE): http://101.101.209.173:8000
 - 스웨거 API: http://101.101.209.173:8000/docs
 
+<br><br>
 
 ## 과제 안내
 
@@ -254,3 +256,7 @@ Tool : <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&log
     "msg": "NOT AUTHORIZED"
 }
 ```
+<br><br>
+
+## Reference
+이 프로젝트는 원티드x위코드 백엔드 프리온보딩 과제 일환으로 에서 출제한 과제를 기반으로 만들었습니다.
