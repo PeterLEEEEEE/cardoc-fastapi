@@ -23,7 +23,7 @@ Tool : <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&log
 
 ## 배포 주소(Naver Cloud 배포)
 - 주소(BASE): http://101.101.209.173:8000
-- 스웨거 API: http://101.101.209.173:8000/docs
+- API 테스트: http://101.101.209.173:8000/docs
 
 <br><br>
 
@@ -77,6 +77,14 @@ Tool : <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&log
 ├── README.md
 └── requirements.txt
 ```
+
+<br><br>
+
+## 서버 구조 및 디자인 패턴 
+
+- sqlalchemy는 session이 사용자와 db 간에 인터페이스 역할을 하는 프록시 패턴이기에 싱글턴 패턴을 이용하여 session을 관리함
+
+- 레이어드 아키텍쳐를 통해 라우팅 역할을 하는 라우트 레이어와 비즈니스 로직을 관리하는 서비스 레이어 그리고 데이터 베이스 로직을 관리하는 persistence 레이어가 dao 폴더에서 관리되고 있다.
 
 <br><br>
 
